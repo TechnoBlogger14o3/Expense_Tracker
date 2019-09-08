@@ -4,11 +4,12 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.graphics.drawable.Drawable;
+import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.techno.expensetracker.R;
 import com.techno.expensetracker.Utils.CommonUtils;
@@ -23,22 +24,16 @@ import androidx.fragment.app.FragmentTransaction;
 
 public class BaseActivity extends AppCompatActivity {
 
-    protected String TAG = BaseActivity.class.getSimpleName();
+    private String TAG = BaseActivity.class.getSimpleName();
 
-    protected ViewGroup fullView;
-
-    protected ViewGroup mRootLayout;
-
-    protected Toolbar toolbar;
-
-    protected FrameLayout frameLayout;
-
+    private ViewGroup fullView;
+    private ViewGroup mRootLayout;
+    private Toolbar toolbar;
+    private FrameLayout frameLayout;
     protected Activity activity;
-
     protected Context context;
-
+    private ViewGroup mBottomBar;
     private Window window;
-
     private int apiLevel = 0;
 
     @Override
@@ -55,12 +50,13 @@ public class BaseActivity extends AppCompatActivity {
                         getResources()
                                 .getDrawable(R.drawable.background_statusbar_tri_color));
             }
-            fullView = (LinearLayout) getLayoutInflater().inflate(R.layout.activity_base, null);
-            frameLayout = (FrameLayout) fullView.findViewById(R.id.activity_content_base);
-            mRootLayout = (LinearLayout) fullView.findViewById(R.id.activity_container_base);
+            fullView = (ViewGroup) getLayoutInflater().inflate(R.layout.activity_base, null);
+            frameLayout = fullView.findViewById(R.id.activity_content_base);
+            mRootLayout = (RelativeLayout) fullView.findViewById(R.id.activity_container_base);
+            mBottomBar = (RelativeLayout) fullView.findViewById(R.id.bottomBarBase);
             getLayoutInflater().inflate(layoutResID, frameLayout, true);
             super.setContentView(fullView);
-            toolbar = (Toolbar) findViewById(R.id.toolbarBase);
+            toolbar = findViewById(R.id.toolbarBase);
             setSupportActionBar(toolbar);
 
             setDisplayHomeAsUpEnabled(true);
@@ -129,6 +125,18 @@ public class BaseActivity extends AppCompatActivity {
     public void hideToolBar() {
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
+        }
+    }
+
+    public void showBottomBar() {
+        if (mBottomBar != null) {
+            mBottomBar.setVisibility(View.VISIBLE);
+        }
+    }
+
+    public void hideBottomBar() {
+        if (mBottomBar != null) {
+            mBottomBar.setVisibility(View.GONE);
         }
     }
 

@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_container_base"
     android:layout_width="match_parent"
@@ -17,5 +17,18 @@
         android:id="@+id/activity_content_base"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarBase"
+        android:layout_above="@+id/bottomBarBase"
         android:layout_gravity="center_horizontal" />
-</LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomBarBase"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/_5sdp"
+        android:background="@drawable/background_top_shade">
+
+        <include layout="@layout/layout_bottom_bar" />
+    </RelativeLayout>
+</RelativeLayout>
