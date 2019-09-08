@@ -1,9 +1,10 @@
-package com.techno.expensetracker;
+package com.techno.expensetracker.Activities;
 
 
 import android.os.Bundle;
 
 import com.techno.expensetracker.Activities.BaseActivity;
+import com.techno.expensetracker.R;
 
 public class MainActivity extends BaseActivity {
 
