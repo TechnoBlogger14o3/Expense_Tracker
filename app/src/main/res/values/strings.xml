@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Expense Tracker</string>
+    <string name="home">Home</string>
+    <string name="report">Report</string>
+    <string name="videos">Videos</string>
+    <string name="profile">Profile</string>
 </resources>
