@@ -4,15 +4,15 @@ import android.app.Application;
 
 import com.techno.expensetracker.Utils.Constants;
 
-public class ApplicationExpTracker extends Application {
+public class ExpTrackerAppController extends Application {
 
-    private static ApplicationExpTracker mSelf;
+    private static ExpTrackerAppController mSelf;
 
-    public ApplicationExpTracker() {
+    public ExpTrackerAppController() {
         mSelf = this;
     }
 
-    public static ApplicationExpTracker getInstance() {
+    public static ExpTrackerAppController getInstance() {
         return mSelf;
     }
 
