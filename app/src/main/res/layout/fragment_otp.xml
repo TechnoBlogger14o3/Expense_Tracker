@@ -41,22 +41,34 @@
         <EditText
             android:id="@+id/editText1"
             android:layout_width="@dimen/_60sdp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1" />
 
         <EditText
             android:id="@+id/editText2"
             android:layout_width="@dimen/_60sdp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1" />
 
         <EditText
             android:id="@+id/editText3"
             android:layout_width="@dimen/_60sdp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1" />
 
         <EditText
             android:id="@+id/editText4"
             android:layout_width="@dimen/_60sdp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1" />
 
 
     </LinearLayout>
