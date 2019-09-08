@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimary">#2C3384</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#EC3C6A</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlack">#000000</color>
     <color name="holo_blue_dark">#ff0099cc</color>
@@ -57,6 +57,5 @@
     <color name="text_sub_title_color">#6c6c7c</color>
 
     <color name="background_holo_light">#60000000</color>
-
 
 </resources>
