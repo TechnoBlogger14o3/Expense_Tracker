@@ -57,5 +57,6 @@
     <color name="text_sub_title_color">#6c6c7c</color>
 
     <color name="background_holo_light">#60000000</color>
+    <color name="bottom_bar_icon_color">#C95A73</color>
 
 </resources>
