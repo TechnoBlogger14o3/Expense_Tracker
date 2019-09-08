@@ -3,4 +3,60 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <color name="lighter_gray">#ddd</color>
+    <color name="darker_gray">#aaa</color>
+    <color name="colorDarkGreen">#006400</color>
+    <color name="colorGreen">#008000</color>
+    <color name="colorLightGreen">#228B22</color>
+    <color name="colorLightLightGreen">#419441</color>
+    <color name="greyDark800">#424242</color>
+    <color name="greyDark700">#616161</color>
+    <color name="greyDark600">#757575</color>
+    <color name="greyDark500">#9D9D9D</color>`
+    <color name="greyDark400">#bdbdbd</color>
+    <color name="greyDark300">#E0E0E0</color>
+    <color name="greyDark200">#EEEEEE</color>
+    <color name="greyDark100">#F5F5F5</color>
+    <color name="greyNew">#7c7c7c</color>
+    <color name="transparent">#00000000</color>
+    <color name="holo_red_light">#ffff4444</color>
+    <color name="holo_red_dark">#ffcc0000</color>
+    <color name="holo_purple">#ffaa66cc</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_orange_dark">#ffff8800</color>
+    <color name="highlighted_text_holo_dark">#6633b5e5</color>
+    <color name="highlighted_text_holo_light">#6633b5e5</color>
+    <color name="camera_outer_color">#99000000</color>
+
+    <color name="status_bar_background_color_splashscreen">#6CACF6</color>
+    <color name="status_bar_background_color_splashscreen_start">#1766B9</color>
+    <color name="status_bar_background_color_splashscreen_end">#133994</color>
+    <color name="tool_bar_background_color_start">#1F78E1</color>
+    <color name="tool_bar_background_color_end">#0845BC</color>
+    <color name="status_bar_background_color_start">#1766B9</color>
+    <color name="status_bar_background_color_end">#133994</color>
+
+    <color name="label_text_color_grey">#878f95</color>
+    <color name="txt_color_black">#35393D</color>
+    <color name="txt_hint_color_grey">#b4b9bd</color>
+    <color name="err_color_red">#E31837</color>
+    <color name="help_text_color">#878f95</color>
+    <color name="edit_text_normal_bg">#D1D3D4</color>
+    <color name="app_primary_black_text_color">#404040</color>
+    <color name="app_divider_color">#CFCFCF</color>
+    <color name="navigation_view_header_background">#39962E</color>
+
+    <color name="color_buy_button_baqckground">#BD2426</color>
+    <color name="color_free_button_baqckground">#237E21</color>
+
+    <color name="text_title_color">#52525E</color>
+    <color name="text_sub_title_color">#6c6c7c</color>
+
+    <color name="background_holo_light">#60000000</color>
+
+
 </resources>
