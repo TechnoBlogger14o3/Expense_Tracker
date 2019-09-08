@@ -13,9 +13,13 @@ import android.widget.LinearLayout;
 import com.techno.expensetracker.R;
 import com.techno.expensetracker.Utils.CommonUtils;
 import com.techno.expensetracker.Utils.Constants;
+import com.techno.expensetracker.fragments.HomeDashBoardFragment;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 public class BaseActivity extends AppCompatActivity {
 
@@ -81,6 +85,15 @@ public class BaseActivity extends AppCompatActivity {
     protected void onPause() {
         CommonUtils.hideKeyBoard(activity, fullView);
         super.onPause();
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (getSupportFragmentManager().getBackStackEntryCount() <= 1) {
+            finish();
+        } else {
+            super.onBackPressed();
+        }
     }
 
     public void setToolbarTitle(String title) {
@@ -178,5 +191,33 @@ public class BaseActivity extends AppCompatActivity {
             mRootLayout.setBackgroundResource(drawable);
         }
     }
+
+    public void callFragment(Fragment fragment, boolean isFragmentAdd) {
+        if (!isFinishing()) {
+            String fragmentTag = fragment.getClass().getSimpleName();
+            int backStackEntryCount = getSupportFragmentManager().getBackStackEntryCount();
+            if (backStackEntryCount > 0) {
+                String name = getSupportFragmentManager().getBackStackEntryAt(backStackEntryCount - 1).getName();
+
+                if (name.equals(fragmentTag)) {
+                    return;
+                }
+            }
+            FragmentManager manager = getSupportFragmentManager();
+            if (fragmentTag.equalsIgnoreCase(HomeDashBoardFragment.class.getSimpleName())) {
+                //If user press home screen, need to clear stack, if user press again back button in home for closing app
+                boolean fragmentPopped = manager.popBackStackImmediate(fragmentTag, 0);
+            }
+            FragmentTransaction ft = manager.beginTransaction();
+            if (isFragmentAdd) {
+                ft.add(R.id.fragment_id_container, fragment, fragmentTag);
+            } else {
+                ft.replace(R.id.fragment_id_container, fragment, fragmentTag);
+            }
+            ft.addToBackStack(fragmentTag);
+            ft.commitAllowingStateLoss();
+        }
+    }
+
 }
 

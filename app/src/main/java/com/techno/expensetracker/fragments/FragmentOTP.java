@@ -10,10 +10,10 @@ import android.widget.EditText;
 
 import com.techno.expensetracker.R;
 
-import androidx.fragment.app.Fragment;
 
 public class FragmentOTP extends CoreFragment {
 
+    private View view;
     private EditText editText1;
     private EditText editText2;
     private EditText editText3;
@@ -21,13 +21,18 @@ public class FragmentOTP extends CoreFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_otp, container, false);
+        view = inflater.inflate(R.layout.fragment_otp, container, false);
+        hideToolBar();
         initView();
         return view;
     }
 
     private void initView() {
 
+        editText1 = view.findViewById(R.id.editText1);
+        editText2 = view.findViewById(R.id.editText2);
+        editText3 = view.findViewById(R.id.editText3);
+        editText4 = view.findViewById(R.id.editText4);
 
         editText1.addTextChangedListener(new GenericTextWatcher(editText1));
         editText2.addTextChangedListener(new GenericTextWatcher(editText2));
