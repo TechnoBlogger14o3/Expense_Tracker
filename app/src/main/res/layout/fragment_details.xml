@@ -35,8 +35,6 @@
         android:layout_marginRight="@dimen/_20sdp"
         android:background="@drawable/edt_background"
         android:hint="Enter name"
-        android:inputType="number"
-        android:maxLength="10"
         android:padding="@dimen/_10sdp"
         android:text="" />
 
@@ -66,11 +64,10 @@
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
             android:background="@drawable/edt_background"
-            android:drawableLeft="@android:drawable/ic_menu_always_landscape_portrait"
+            android:drawableLeft="@drawable/ic_male"
             android:drawablePadding="@dimen/_10sdp"
+            android:editable="false"
             android:hint="Male"
-            android:inputType="number"
-            android:maxLength="10"
             android:padding="@dimen/_10sdp"
             android:text="" />
 
@@ -81,11 +78,10 @@
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
             android:background="@drawable/edt_background"
-            android:drawableLeft="@android:drawable/ic_menu_always_landscape_portrait"
+            android:drawableLeft="@drawable/ic_female"
             android:drawablePadding="@dimen/_10sdp"
+            android:editable="false"
             android:hint="Female"
-            android:inputType="number"
-            android:maxLength="10"
             android:padding="@dimen/_10sdp"
             android:text="" />
 
@@ -109,21 +105,20 @@
         android:orientation="horizontal"
         android:weightSum="2">
 
-        <EditText
+        <TextView
             android:id="@+id/edt1824"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
             android:background="@drawable/edt_background"
+            android:editable="false"
             android:gravity="center"
             android:hint="18-24"
-            android:inputType="number"
-            android:maxLength="10"
             android:padding="@dimen/_10sdp"
             android:text="" />
 
-        <EditText
+        <TextView
             android:id="@+id/edt2534"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
@@ -132,8 +127,6 @@
             android:background="@drawable/edt_background"
             android:gravity="center"
             android:hint="25-34"
-            android:inputType="number"
-            android:maxLength="10"
             android:padding="@dimen/_10sdp"
             android:text="" />
 
@@ -148,7 +141,7 @@
         android:orientation="horizontal"
         android:weightSum="2">
 
-        <EditText
+        <TextView
             android:id="@+id/edt35-44"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
@@ -157,12 +150,10 @@
             android:background="@drawable/edt_background"
             android:gravity="center"
             android:hint="35-44"
-            android:inputType="number"
-            android:maxLength="10"
             android:padding="@dimen/_10sdp"
             android:text="" />
 
-        <EditText
+        <TextView
             android:id="@+id/edt44"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
@@ -171,8 +162,6 @@
             android:background="@drawable/edt_background"
             android:gravity="center"
             android:hint="44 +"
-            android:inputType="number"
-            android:maxLength="10"
             android:padding="@dimen/_10sdp"
             android:text="" />
 
@@ -187,7 +176,7 @@
         android:layout_marginLeft="@dimen/_40sdp"
         android:layout_marginTop="@dimen/_40sdp"
         android:layout_marginRight="@dimen/_40sdp"
-        android:background="@drawable/btn_background"
+        android:background="@drawable/background_tri_color"
         android:text="Verify and Proceed"
         android:textAllCaps="false"
         android:textColor="@color/colorWhite" />
