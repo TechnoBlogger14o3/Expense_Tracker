@@ -80,7 +80,7 @@
         android:textColor="@color/colorWhite"
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginRight="@dimen/_40sdp"
-        android:background="@drawable/btn_background"
+        android:background="@drawable/background_tri_color"
         android:text="Get OTP" />
 
 </LinearLayout>

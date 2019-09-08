@@ -12,7 +12,7 @@ import com.techno.expensetracker.R;
 
 import androidx.fragment.app.Fragment;
 
-public class FragmentOTP extends Fragment {
+public class FragmentOTP extends CoreFragment {
 
     private EditText editText1;
     private EditText editText2;
