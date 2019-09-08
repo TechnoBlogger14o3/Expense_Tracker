@@ -3,8 +3,8 @@
 
     <item android:state_pressed="true">
         <shape>
-            <corners android:radius="0dp" />
-            <gradient android:angle="360" android:endColor="@color/status_bar_background_color_end" android:startColor="@color/status_bar_background_color_start" />
+            <corners android:radius="32dp" />
+            <gradient android:angle="360" android:endColor="@color/tool_bar_background_color_end" android:startColor="@color/tool_bar_background_color_start" />
             <stroke android:width="0dp" android:color="#BDBDBD" />
 
         </shape>
@@ -12,8 +12,8 @@
 
     <item android:state_focused="true">
         <shape>
-            <corners android:radius="0dp" />
-            <gradient android:angle="360" android:endColor="@color/status_bar_background_color_end" android:startColor="@color/status_bar_background_color_start" />
+            <corners android:radius="32dp" />
+            <gradient android:angle="360" android:endColor="@color/tool_bar_background_color_end" android:startColor="@color/tool_bar_background_color_start" />
             <stroke android:width="0dp" android:color="#BDBDBD" />
 
         </shape>
@@ -21,8 +21,8 @@
 
     <item>
         <shape>
-            <corners android:radius="0dp" />
-            <gradient android:angle="360" android:endColor="@color/status_bar_background_color_end" android:startColor="@color/status_bar_background_color_start" />
+            <corners android:radius="32dp" />
+            <gradient android:angle="360" android:endColor="@color/tool_bar_background_color_end" android:startColor="@color/tool_bar_background_color_start" />
             <padding android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp" />
             <stroke android:width="0dp" android:color="@android:color/transparent" />
         </shape>
