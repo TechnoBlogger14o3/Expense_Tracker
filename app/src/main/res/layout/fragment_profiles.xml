@@ -7,6 +7,22 @@
     android:orientation="vertical"
     tools:context=".Activities.MainActivity">
 
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:textSize="@dimen/_16sdp"
+        android:drawableLeft="@drawable/ic_back"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_5sdp"
+        android:drawablePadding="@dimen/_14sdp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:text="Profile Details">
+
+    </TextView>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

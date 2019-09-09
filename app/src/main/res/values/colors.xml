@@ -58,5 +58,8 @@
 
     <color name="background_holo_light">#60000000</color>
     <color name="bottom_bar_icon_color">#C95A73</color>
+    <color name="colorBgGreen">#3B9F32</color>
+
+
 
 </resources>

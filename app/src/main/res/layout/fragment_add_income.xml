@@ -5,28 +5,29 @@
     android:orientation="vertical">
 
 
+
     <RadioGroup
-        android:id="@+id/radioSex"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnGroup"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/_72sdp"
+        android:layout_margin="@dimen/_10sdp"
         android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/radioMale"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="true"
+            android:id="@+id/btn_my_providers"
+            style="@style/radio_btn_my_providers"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal|center_vertical"
             android:text="Expense" />
 
         <RadioButton
-            android:id="@+id/radioFemale"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/btn_other_providers"
+            style="@style/radio_btn_other_providers"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal|center_vertical"
             android:text="Income" />
-
     </RadioGroup>
+
 
     <TextView
         android:layout_width="wrap_content"

@@ -21,7 +21,7 @@ public class FragmentProfiles extends CoreFragment {
 
     private View view;
     private EditText edtName;
-    private TextView txtProfileName;
+    private TextView txtProfileName, txtTitle;
     private Button btnSave;
     RadioButton rbMale, rbFemale, rb1824, rb2534, rb3544, rb45;
     RadioGroup radioGender, radioAgeGroup, radio1834, radio35;
@@ -31,9 +31,7 @@ public class FragmentProfiles extends CoreFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_profiles, container, false);
-        showToolBar();
         showBottomBar();
-        mActivity.setToolbarTitle("Profile Details");
         initView();
         return view;
     }
@@ -41,6 +39,7 @@ public class FragmentProfiles extends CoreFragment {
     private void initView() {
         edtName = view.findViewById(R.id.edtName);
         txtProfileName = view.findViewById(R.id.txtProfileName);
+        txtTitle = view.findViewById(R.id.txtTitle);
         btnSave = view.findViewById(R.id.btnSave);
         imgProfile = view.findViewById(R.id.imgProfile);
 
@@ -125,6 +124,13 @@ public class FragmentProfiles extends CoreFragment {
             public void onClick(View view) {
                 FragmentSuccess fragmentSuccess = new FragmentSuccess();
                 mActivity.callFragment(fragmentSuccess, true);
+            }
+        });
+
+        txtTitle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mActivity.onBackPressed();
             }
         });
 
