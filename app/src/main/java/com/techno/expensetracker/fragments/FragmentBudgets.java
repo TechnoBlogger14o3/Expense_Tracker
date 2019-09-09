@@ -33,7 +33,7 @@ public class FragmentBudgets extends CoreFragment {
             @Override
             public void onClick(View view) {
                 FragmentProfiles fragmentProfiles = new FragmentProfiles();
-                mActivity.callFragment(fragmentProfiles, true);
+                mActivity.callFragment(fragmentProfiles, false);
             }
         });
     }
