@@ -23,7 +23,7 @@ public class FragmentDetails extends CoreFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_details_test, container, false);
+        view = inflater.inflate(R.layout.fragment_details, container, false);
         hideToolBar();
         initView();
         return view;
@@ -34,10 +34,10 @@ public class FragmentDetails extends CoreFragment {
         btnVerifyAndProceed = view.findViewById(R.id.btnVerifyAndProceed);
 
         radioGender = view.findViewById(R.id.radioGender);
-        radioAgeGroup = view.findViewById(R.id.radioAgeGroup);
+//        radioAgeGroup = view.findViewById(R.id.radioAgeGroup);
 
-//        radio1834 = view.findViewById(R.id.radio1834);
-//        radio35 = view.findViewById(R.id.radio35);
+        radio1834 = view.findViewById(R.id.radio1834);
+        radio35 = view.findViewById(R.id.radio35);
 
         rbMale = view.findViewById(R.id.rbMale);
         rbFemale = view.findViewById(R.id.rbFemale);
@@ -46,7 +46,7 @@ public class FragmentDetails extends CoreFragment {
         rb2534 = view.findViewById(R.id.rb2534);
 
         rb3544 = view.findViewById(R.id.rb3544);
-        rb45 = view.findViewById(R.id.rb44);
+        rb45 = view.findViewById(R.id.rb45);
 
         radioGender.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -65,7 +65,7 @@ public class FragmentDetails extends CoreFragment {
         });
 
 
-       /* radio1834.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        radio1834.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (rb1824.isChecked()) {
@@ -103,12 +103,13 @@ public class FragmentDetails extends CoreFragment {
                     rb3544.setAlpha(0.5f);
                 }
             }
-        });*/
+        });
 
 
-        radioAgeGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+    /*    radioAgeGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                Toast.makeText(getActivity(), "Radio Group", Toast.LENGTH_SHORT).show();
                 if (rb1824.isChecked()) {
                     Toast.makeText(getActivity(), "18-24", Toast.LENGTH_SHORT).show();
                     rb1824.setAlpha(1.0f);
@@ -138,7 +139,7 @@ public class FragmentDetails extends CoreFragment {
                     rb3544.setAlpha(0.5f);
                 }
             }
-        });
+        });*/
 
 
         btnVerifyAndProceed.setOnClickListener(new View.OnClickListener() {

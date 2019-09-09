@@ -49,44 +49,48 @@
         android:textStyle="bold" />
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <RadioGroup
+        android:id="@+id/radioGender"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_41sdp"
         android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginRight="@dimen/_20sdp"
         android:orientation="horizontal"
         android:weightSum="2">
 
-        <EditText
-            android:id="@+id/edtMale"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
             android:background="@drawable/edt_background"
+            android:button="@null"
+            android:checked="false"
             android:drawableLeft="@drawable/ic_male"
             android:drawablePadding="@dimen/_10sdp"
-            android:editable="false"
-            android:hint="Male"
-            android:padding="@dimen/_10sdp"
-            android:text="" />
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="Male"
+            android:textSize="@dimen/_14sdp" />
 
-        <EditText
-            android:id="@+id/edtFeMale"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
             android:background="@drawable/edt_background"
+            android:button="@null"
+            android:checked="false"
             android:drawableLeft="@drawable/ic_female"
             android:drawablePadding="@dimen/_10sdp"
-            android:editable="false"
-            android:hint="Female"
-            android:padding="@dimen/_10sdp"
-            android:text="" />
-
-    </LinearLayout>
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="Female"
+            android:textSize="@dimen/_14sdp" />
+    </RadioGroup>
 
 
     <TextView
@@ -97,76 +101,84 @@
         android:text="What is your age"
         android:textStyle="bold" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <RadioGroup
+        android:id="@+id/radio1834"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_41sdp"
         android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginRight="@dimen/_20sdp"
         android:orientation="horizontal"
         android:weightSum="2">
 
-        <TextView
-            android:id="@+id/txt1824"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
+        <RadioButton
+            android:id="@+id/rb1824"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
             android:background="@drawable/edt_background"
-            android:editable="false"
+            android:button="@null"
+            android:checked="false"
             android:gravity="center"
-            android:hint="18-24"
-            android:padding="@dimen/_10sdp"
-            android:text="" />
+            android:text="18 - 24"
+            android:textSize="@dimen/_14sdp" />
 
-        <TextView
-            android:id="@+id/txt2534"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
+        <RadioButton
+            android:id="@+id/rb2534"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
             android:background="@drawable/edt_background"
+            android:button="@null"
+            android:checked="false"
             android:gravity="center"
-            android:hint="25-34"
-            android:padding="@dimen/_10sdp"
-            android:text="" />
+            android:text="25 - 34"
+            android:textSize="@dimen/_14sdp" />
+    </RadioGroup>
 
-    </LinearLayout>
-
-    <LinearLayout
+    <RadioGroup
+        android:id="@+id/radio35"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/_41sdp"
         android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginRight="@dimen/_20sdp"
         android:orientation="horizontal"
         android:weightSum="2">
 
-        <TextView
-            android:id="@+id/txt3544"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
+        <RadioButton
+            android:id="@+id/rb3544"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
             android:background="@drawable/edt_background"
+            android:button="@null"
+            android:checked="false"
             android:gravity="center"
-            android:hint="35-44"
-            android:padding="@dimen/_10sdp"
-            android:text="" />
+            android:text="35 - 44"
+            android:textSize="@dimen/_14sdp" />
 
-        <TextView
-            android:id="@+id/txt44"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
+        <RadioButton
+            android:id="@+id/rb45"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
             android:background="@drawable/edt_background"
+            android:button="@null"
+            android:checked="false"
             android:gravity="center"
-            android:hint="44 +"
-            android:padding="@dimen/_10sdp"
-            android:text="" />
+            android:text="45 +    "
+            android:textSize="@dimen/_14sdp" />
 
-    </LinearLayout>
+    </RadioGroup>
 
 
     <Button
