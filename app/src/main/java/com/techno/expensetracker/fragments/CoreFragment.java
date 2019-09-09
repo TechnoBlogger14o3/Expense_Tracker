@@ -15,13 +15,8 @@ public class CoreFragment extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        mActivity = (MainActivity) context;
+        this.mActivity = (MainActivity) context;
         this.mContext = mActivity;
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
     }
 
     public void showToolBar() {

@@ -24,11 +24,16 @@ public class LanguageSelectionFragment extends CoreFragment implements LangSelec
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_language_selection, container, false);
+        initView();
+        return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
         showToolBar();
         hideBottomBar();
         setDisplayShowTitleEnabled(false);
-        initView();
-        return view;
     }
 
     private void initView() {
