@@ -47,4 +47,10 @@ public class CoreFragment extends Fragment {
             mActivity.hideBottomBar();
         }
     }
+
+    public void setDisplayShowTitleEnabled(boolean enable) {
+        if (mActivity != null) {
+            mActivity.setDisplayShowTitleEnabled(enable);
+        }
+    }
 }

@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import com.techno.expensetracker.R;
 import com.techno.expensetracker.fragments.FragmentRegisterMobile;
+import com.techno.expensetracker.fragments.LanguageSelectionFragment;
 
 public class MainActivity extends BaseActivity {
 
@@ -14,7 +15,7 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
         setDisplayHomeAsUpEnabled(false);
         setHomeButtonEnabled(false);
-        FragmentRegisterMobile fragmentRegisterMobile = new FragmentRegisterMobile();
+        LanguageSelectionFragment fragmentRegisterMobile = new LanguageSelectionFragment();
         callFragment(fragmentRegisterMobile, true);
     }
 }

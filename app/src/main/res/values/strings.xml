@@ -4,4 +4,13 @@
     <string name="report">Report</string>
     <string name="videos">Videos</string>
     <string name="profile">Profile</string>
+    <string name="choose_your_preferred_lang">Choose Your Preferred \nLanguage</string>
+
+    <string name="english">English</string>
+    <string name="hindi">हिंदी</string>
+    <string name="kannada">ಕನ್ನಡ</string>
+    <string name="telugu">తెలుగు</string>
+    <string name="gujarati">ગુજરાતી</string>
+    <string name="marathi">मराठी</string>
+    <string name="tamil">தமிழ்</string>
 </resources>
