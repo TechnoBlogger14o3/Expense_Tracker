@@ -6,36 +6,45 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.techno.expensetracker.R;
 
 
-public class FragmentDetails extends CoreFragment {
+public class FragmentProfiles extends CoreFragment {
 
     private View view;
     private EditText edtName;
-    private Button btnVerifyAndProceed;
+    private TextView txtProfileName;
+    private Button btnSave;
     RadioButton rbMale, rbFemale, rb1824, rb2534, rb3544, rb45;
     RadioGroup radioGender, radioAgeGroup, radio1834, radio35;
+    ImageView imgProfile;
+    String strDummyImageURL = "https://blog.zenstudios.com/wp-content/uploads/2012/09/Zen_Pinball_THD_The_Avengers_key_art_300dpi_02.jpg";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_details, container, false);
-        hideToolBar();
-        hideBottomBar();
+        view = inflater.inflate(R.layout.fragment_profiles, container, false);
+        showToolBar();
+        showBottomBar();
+        mActivity.setToolbarTitle("Profile Details");
         initView();
         return view;
     }
 
     private void initView() {
         edtName = view.findViewById(R.id.edtName);
-        btnVerifyAndProceed = view.findViewById(R.id.btnVerifyAndProceed);
+        txtProfileName = view.findViewById(R.id.txtProfileName);
+        btnSave = view.findViewById(R.id.btnSave);
+        imgProfile = view.findViewById(R.id.imgProfile);
 
         radioGender = view.findViewById(R.id.radioGender);
-//        radioAgeGroup = view.findViewById(R.id.radioAgeGroup);
 
         radio1834 = view.findViewById(R.id.radio1834);
         radio35 = view.findViewById(R.id.radio35);
@@ -106,44 +115,12 @@ public class FragmentDetails extends CoreFragment {
             }
         });
 
+        Glide.with(mActivity)
+                .load(strDummyImageURL)
+                .apply(RequestOptions.circleCropTransform())
+                .into(imgProfile);
 
-    /*    radioAgeGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                Toast.makeText(getActivity(), "Radio Group", Toast.LENGTH_SHORT).show();
-                if (rb1824.isChecked()) {
-                    Toast.makeText(getActivity(), "18-24", Toast.LENGTH_SHORT).show();
-                    rb1824.setAlpha(1.0f);
-                    rb2534.setAlpha(0.5f);
-                    rb45.setAlpha(0.5f);
-                    rb3544.setAlpha(0.5f);
-                }
-                if (rb2534.isChecked()) {
-                    Toast.makeText(getActivity(), "25-34", Toast.LENGTH_SHORT).show();
-                    rb2534.setAlpha(1.0f);
-                    rb1824.setAlpha(0.5f);
-                    rb45.setAlpha(0.5f);
-                    rb3544.setAlpha(0.5f);
-                }
-                if (rb3544.isChecked()) {
-                    Toast.makeText(getActivity(), "35-44", Toast.LENGTH_SHORT).show();
-                    rb3544.setAlpha(1.0f);
-                    rb1824.setAlpha(0.5f);
-                    rb2534.setAlpha(0.5f);
-                    rb45.setAlpha(0.5f);
-                }
-                if (rb45.isChecked()) {
-                    Toast.makeText(getActivity(), "44+", Toast.LENGTH_SHORT).show();
-                    rb45.setAlpha(1.0f);
-                    rb1824.setAlpha(0.5f);
-                    rb2534.setAlpha(0.5f);
-                    rb3544.setAlpha(0.5f);
-                }
-            }
-        });*/
-
-
-        btnVerifyAndProceed.setOnClickListener(new View.OnClickListener() {
+        btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentSuccess fragmentSuccess = new FragmentSuccess();
