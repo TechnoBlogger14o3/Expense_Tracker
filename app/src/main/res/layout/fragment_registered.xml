@@ -2,15 +2,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
     android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="@dimen/_90sdp"
-        android:layout_height="@dimen/_90sdp"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/_72sdp"
-        android:src="@drawable/ic_ill_verification" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_72sdp"
+            android:src="@drawable/ic_bg" />
+
+        <ImageView
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_72sdp"
+            android:src="@drawable/ic_ill_verification" />
+
+    </RelativeLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,12 +46,13 @@
         android:layout_marginLeft="@dimen/_40sdp"
         android:layout_marginTop="@dimen/_240sdp"
         android:layout_marginRight="@dimen/_40sdp"
-        android:background="@drawable/btn_background"
+        android:background="@drawable/background_tri_color"
         android:text="Setup my Budget"
         android:textAllCaps="false"
         android:textColor="@color/colorWhite" />
 
     <TextView
+        android:id="@+id/txtSkip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_15sdp"
