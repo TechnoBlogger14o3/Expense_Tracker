@@ -4,18 +4,22 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.graphics.drawable.Drawable;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.techno.expensetracker.R;
 import com.techno.expensetracker.Utils.CommonUtils;
 import com.techno.expensetracker.Utils.Constants;
 import com.techno.expensetracker.fragments.HomeDashBoardFragment;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
@@ -24,15 +28,14 @@ import androidx.fragment.app.FragmentTransaction;
 
 public class BaseActivity extends AppCompatActivity {
 
+    protected Activity activity;
+    protected Context context;
     private String TAG = BaseActivity.class.getSimpleName();
-
     private ViewGroup fullView;
     private ViewGroup mRootLayout;
     private Toolbar toolbar;
     private FrameLayout frameLayout;
-    protected Activity activity;
-    protected Context context;
-    private ViewGroup mBottomBar;
+    private BottomNavigationView mBottomBar;
     private Window window;
     private int apiLevel = 0;
 
@@ -53,7 +56,7 @@ public class BaseActivity extends AppCompatActivity {
             fullView = (ViewGroup) getLayoutInflater().inflate(R.layout.activity_base, null);
             frameLayout = fullView.findViewById(R.id.activity_content_base);
             mRootLayout = (RelativeLayout) fullView.findViewById(R.id.activity_container_base);
-            mBottomBar = (RelativeLayout) fullView.findViewById(R.id.bottomBarBase);
+            mBottomBar = fullView.findViewById(R.id.bottomBarBase);
             getLayoutInflater().inflate(layoutResID, frameLayout, true);
             super.setContentView(fullView);
             toolbar = findViewById(R.id.toolbarBase);
@@ -227,5 +230,22 @@ public class BaseActivity extends AppCompatActivity {
         }
     }
 
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        switch (menuItem.getItemId()) {
+            case R.id.navigation_home:
+                Toast.makeText(this, "Home clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.navigation_report:
+                Toast.makeText(this, "Report clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.navigation_video:
+                Toast.makeText(this, "Video clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.navigation_profile:
+                Toast.makeText(this, "Profile clicked", Toast.LENGTH_SHORT).show();
+                break;
+        }
+        return false;
+    }
 }
 

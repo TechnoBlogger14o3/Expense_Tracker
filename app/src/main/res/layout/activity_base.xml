@@ -21,14 +21,16 @@
         android:layout_above="@+id/bottomBarBase"
         android:layout_gravity="center_horizontal" />
 
-    <RelativeLayout
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomBarBase"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
         android:layout_alignParentBottom="true"
         android:paddingBottom="@dimen/_5sdp"
-        android:background="@drawable/background_top_shade">
+        android:background="@drawable/background_top_shade"
+        app:itemIconTint="@drawable/bottom_navigation_color_selector"
+        app:itemTextColor="@drawable/bottom_navigation_color_selector"
+        app:menu="@menu/bottom_navigation_menu"
+        app:labelVisibilityMode="labeled" />
 
-        <include layout="@layout/layout_bottom_bar" />
-    </RelativeLayout>
 </RelativeLayout>
