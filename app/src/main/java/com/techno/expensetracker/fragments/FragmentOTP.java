@@ -6,6 +6,7 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 
 import com.techno.expensetracker.R;
@@ -18,6 +19,7 @@ public class FragmentOTP extends CoreFragment {
     private EditText editText2;
     private EditText editText3;
     private EditText editText4;
+    private Button btnVerifyOTP;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -33,11 +35,20 @@ public class FragmentOTP extends CoreFragment {
         editText2 = view.findViewById(R.id.editText2);
         editText3 = view.findViewById(R.id.editText3);
         editText4 = view.findViewById(R.id.editText4);
+        btnVerifyOTP = view.findViewById(R.id.btnVerifyOTP);
 
         editText1.addTextChangedListener(new GenericTextWatcher(editText1));
         editText2.addTextChangedListener(new GenericTextWatcher(editText2));
         editText3.addTextChangedListener(new GenericTextWatcher(editText3));
         editText4.addTextChangedListener(new GenericTextWatcher(editText4));
+
+        btnVerifyOTP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentDetails fragmentDetails = new FragmentDetails();
+                mActivity.callFragment(fragmentDetails, true);
+            }
+        });
     }
 
     class GenericTextWatcher implements TextWatcher {

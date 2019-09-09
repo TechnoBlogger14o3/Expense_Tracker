@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
     android:orientation="vertical"
     tools:context=".Activities.MainActivity">
 
@@ -87,6 +88,7 @@
 
 
     <Button
+        android:id="@+id/btnVerifyOTP"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -94,7 +96,7 @@
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginRight="@dimen/_40sdp"
         android:background="@drawable/background_tri_color"
-        android:text="Get OTP"
+        android:text="Verify OTP"
         android:textAllCaps="false"
         android:textColor="@color/colorWhite" />
 

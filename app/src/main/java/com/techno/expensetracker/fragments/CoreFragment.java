@@ -3,9 +3,9 @@ package com.techno.expensetracker.fragments;
 
 import android.content.Context;
 
-import com.techno.expensetracker.Activities.MainActivity;
-
 import androidx.fragment.app.Fragment;
+
+import com.techno.expensetracker.Activities.MainActivity;
 
 public class CoreFragment extends Fragment {
 
