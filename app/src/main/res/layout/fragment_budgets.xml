@@ -23,7 +23,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_40sdp"
-        android:text="Setup Budget"
+        android:text="@string/setup_budget"
         android:textSize="@dimen/_20sdp" />
 
     <TextView
@@ -33,7 +33,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_5sdp"
-        android:text="Setup my monthly expected expenses" />
+        android:text="@string/setup_my_monthly_expected_expenses" />
 
     <TextView
         android:layout_width="match_parent"
@@ -43,7 +43,7 @@
         android:layout_marginTop="@dimen/_20sdp"
         android:drawableLeft="@drawable/ic_dish"
         android:drawablePadding="@dimen/_10sdp"
-        android:text="Food" />
+        android:text="@string/food" />
 
     <EditText
         android:id="@+id/edtFood"
@@ -54,7 +54,7 @@
         android:layout_marginRight="@dimen/_20sdp"
         android:inputType="number"
         android:background="@drawable/edt_background"
-        android:hint="Enter Amount"
+        android:hint="@string/enter_amount"
         android:padding="@dimen/_10sdp"
         android:text="" />
 
@@ -66,7 +66,7 @@
         android:layout_marginTop="@dimen/_20sdp"
         android:drawableLeft="@drawable/ic_house"
         android:drawablePadding="@dimen/_10sdp"
-        android:text="Rent" />
+        android:text="@string/rent" />
 
     <EditText
         android:id="@+id/edtRent"
@@ -76,7 +76,7 @@
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginRight="@dimen/_20sdp"
         android:background="@drawable/edt_background"
-        android:hint="Enter Amount"
+        android:hint="@string/enter_amount"
         android:inputType="number"
         android:padding="@dimen/_10sdp"
         android:text="" />
@@ -89,7 +89,7 @@
         android:layout_marginTop="@dimen/_20sdp"
         android:drawableLeft="@drawable/ic_bus"
         android:drawablePadding="@dimen/_10sdp"
-        android:text="Travel" />
+        android:text="@string/travel" />
 
     <EditText
         android:id="@+id/edtTravel"
@@ -99,7 +99,7 @@
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginRight="@dimen/_20sdp"
         android:background="@drawable/edt_background"
-        android:hint="Enter Amount"
+        android:hint="@string/enter_amount"
         android:inputType="number"
         android:padding="@dimen/_10sdp"
         android:text="" />
@@ -112,7 +112,7 @@
         android:layout_marginTop="@dimen/_20sdp"
         android:drawableLeft="@drawable/ic_loan"
         android:drawablePadding="@dimen/_10sdp"
-        android:text="Loan" />
+        android:text="@string/loan" />
 
     <EditText
         android:id="@+id/edtLoan"
@@ -123,7 +123,7 @@
         android:layout_marginRight="@dimen/_20sdp"
         android:background="@drawable/edt_background"
         android:inputType="number"
-        android:hint="Enter Amount"
+        android:hint="@string/enter_amount"
         android:padding="@dimen/_10sdp"
         android:text="" />
 
@@ -135,7 +135,7 @@
         android:layout_marginTop="@dimen/_20sdp"
         android:drawableLeft="@drawable/ic_mortarboard"
         android:drawablePadding="@dimen/_10sdp"
-        android:text="Education" />
+        android:text="@string/education" />
 
     <EditText
         android:id="@+id/edtEducation"
@@ -146,7 +146,7 @@
         android:layout_marginRight="@dimen/_20sdp"
         android:background="@drawable/edt_background"
         android:inputType="number"
-        android:hint="Enter Amount"
+        android:hint="@string/enter_amount"
         android:padding="@dimen/_10sdp"
         android:text="" />
 
@@ -159,7 +159,7 @@
         android:layout_marginTop="@dimen/_40sdp"
         android:layout_marginRight="@dimen/_40sdp"
         android:background="@drawable/background_tri_color"
-        android:text="Verify and Proceed"
+        android:text="@string/verify_and_proceed"
         android:textAllCaps="false"
         android:textColor="@color/colorWhite" />
         </LinearLayout>

@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_20sdp"
-        android:text="Get started with Prosperfit"
+        android:text="@string/get_started_with_prosperfit"
         android:textStyle="bold" />
 
 
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_10sdp"
-        android:text="Enter your mobile number to get register" />
+        android:text="@string/enter_your_mobile_number_to_get_register" />
 
 
     <LinearLayout
@@ -81,7 +81,7 @@
         android:layout_marginRight="@dimen/_40sdp"
         android:background="@drawable/background_tri_color"
         android:enabled="true"
-        android:text="Get OTP"
+        android:text="@string/get_otp"
         android:textColor="@color/colorWhite" />
 
 </LinearLayout>

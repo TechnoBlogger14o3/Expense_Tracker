@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_5sdp"
         android:gravity="center"
-        android:text="Great !"
+        android:text="@string/great"
         android:textSize="@dimen/_20sdp"
         android:textStyle="bold" />
 
@@ -36,7 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Your mobile number is successfully registered" />
+        android:text="@string/your_mobile_number_is_successfully_registered" />
 
     <Button
         android:id="@+id/btnGetOTP"
@@ -47,7 +47,7 @@
         android:layout_marginTop="@dimen/_240sdp"
         android:layout_marginRight="@dimen/_40sdp"
         android:background="@drawable/background_tri_color"
-        android:text="Setup my Budget"
+        android:text="@string/setup_my_budget"
         android:textAllCaps="false"
         android:textColor="@color/colorWhite" />
 
@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_15sdp"
         android:gravity="center"
-        android:text="Skip"
+        android:text="@string/skip"
         android:textColor="@color/colorAccent"
         android:textSize="@dimen/_14sdp" />
 

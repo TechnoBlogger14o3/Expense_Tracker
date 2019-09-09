@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_10sdp"
-        android:text="What is your name"
+        android:text="@string/what_is_your_name"
         android:textStyle="bold" />
 
 
@@ -72,7 +72,7 @@
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginRight="@dimen/_20sdp"
         android:background="@drawable/edt_background"
-        android:hint="Enter name"
+        android:hint="@string/enter_name"
         android:padding="@dimen/_10sdp"
         android:text="" />
 
@@ -82,7 +82,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_10sdp"
-        android:text="What is your gender"
+        android:text="@string/what_is_your_gender"
         android:textStyle="bold" />
 
 
@@ -109,7 +109,7 @@
             android:drawableLeft="@drawable/ic_male"
             android:drawablePadding="@dimen/_10sdp"
             android:paddingLeft="@dimen/_10sdp"
-            android:text="Male"
+            android:text="@string/male"
             android:textSize="@dimen/_14sdp" />
 
         <RadioButton
@@ -125,7 +125,7 @@
             android:drawableLeft="@drawable/ic_female"
             android:drawablePadding="@dimen/_10sdp"
             android:paddingLeft="@dimen/_10sdp"
-            android:text="Female"
+            android:text="@string/female"
             android:textSize="@dimen/_14sdp" />
     </RadioGroup>
 
@@ -135,7 +135,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_10sdp"
-        android:text="What is your age"
+        android:text="@string/what_is_your_age"
         android:textStyle="bold" />
 
     <RadioGroup
@@ -159,7 +159,7 @@
             android:button="@null"
             android:checked="false"
             android:gravity="center"
-            android:text="18 - 24"
+            android:text="@string/_18_24"
             android:textSize="@dimen/_14sdp" />
 
         <RadioButton
@@ -173,7 +173,7 @@
             android:button="@null"
             android:checked="false"
             android:gravity="center"
-            android:text="25 - 34"
+            android:text="@string/_25_34"
             android:textSize="@dimen/_14sdp" />
     </RadioGroup>
 
@@ -198,7 +198,7 @@
             android:button="@null"
             android:checked="false"
             android:gravity="center"
-            android:text="35 - 44"
+            android:text="@string/_35_44"
             android:textSize="@dimen/_14sdp" />
 
         <RadioButton
@@ -212,7 +212,7 @@
             android:button="@null"
             android:checked="false"
             android:gravity="center"
-            android:text="45 +    "
+            android:text="@string/_45"
             android:textSize="@dimen/_14sdp" />
 
     </RadioGroup>
@@ -227,7 +227,7 @@
         android:layout_marginTop="@dimen/_40sdp"
         android:layout_marginRight="@dimen/_40sdp"
         android:background="@drawable/background_tri_color"
-        android:text="Save"
+        android:text="@string/save"
         android:textAllCaps="false"
         android:textColor="@color/colorWhite" />
 

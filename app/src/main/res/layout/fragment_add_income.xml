@@ -18,14 +18,14 @@
             style="@style/radio_btn_my_providers"
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal|center_vertical"
-            android:text="Expense" />
+            android:text="@string/expense" />
 
         <RadioButton
             android:id="@+id/btn_other_providers"
             style="@style/radio_btn_other_providers"
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal|center_vertical"
-            android:text="Income" />
+            android:text="@string/income" />
     </RadioGroup>
 
 
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_41sdp"
-        android:text="Categories"
+        android:text="@string/categories"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -55,7 +55,7 @@
             android:background="@drawable/edt_background"
             android:drawableTop="@drawable/ic_icon_home"
             android:gravity="center"
-            android:hint="Salary"
+            android:hint="@string/salary"
             android:padding="@dimen/_10sdp"
             android:text="" />
 
@@ -68,7 +68,7 @@
             android:background="@drawable/edt_background"
             android:drawableTop="@drawable/ic_icon_home"
             android:gravity="center"
-            android:hint="Gift"
+            android:hint="@string/gift"
             android:padding="@dimen/_10sdp"
             android:text="" />
 
@@ -81,7 +81,7 @@
             android:background="@drawable/edt_background"
             android:drawableTop="@drawable/ic_icon_home"
             android:gravity="center"
-            android:hint="Lottery"
+            android:hint="@string/lottery"
             android:padding="@dimen/_10sdp"
             android:text="" />
 
@@ -105,7 +105,7 @@
             android:background="@drawable/edt_background"
             android:drawableTop="@drawable/ic_icon_home"
             android:gravity="center"
-            android:hint="Sale"
+            android:hint="@string/sale"
             android:padding="@dimen/_10sdp"
             android:text="" />
 
@@ -118,7 +118,7 @@
             android:background="@drawable/edt_background"
             android:drawableTop="@drawable/ic_icon_home"
             android:gravity="center"
-            android:hint="Refund"
+            android:hint="@string/refund"
             android:padding="@dimen/_10sdp"
             android:text="" />
 
@@ -131,7 +131,7 @@
             android:background="@drawable/edt_background"
             android:drawableTop="@drawable/ic_icon_home"
             android:gravity="center"
-            android:hint="Other"
+            android:hint="@string/other"
             android:padding="@dimen/_10sdp"
             android:text="" />
 
