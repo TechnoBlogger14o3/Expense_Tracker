@@ -39,6 +39,14 @@
         android:background="@color/colorPrimary">
 
         <ImageView
+            android:id="@+id/imgLogOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_iconfinder_icons_exit2_1564506"/>
+
+        <ImageView
             android:id="@+id/imgProfile"
             android:layout_width="@dimen/_72sdp"
             android:layout_height="@dimen/_72sdp"

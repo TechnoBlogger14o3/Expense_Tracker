@@ -37,6 +37,16 @@ public class FragmentSuccess extends CoreFragment {
                 mActivity.callFragment(fragmentBudgets, false);
             }
         });
+
+        txtSkip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentSetIncomeOrExpense fragmentSetIncomeOrExpense = new FragmentSetIncomeOrExpense();
+                mActivity.callFragment(fragmentSetIncomeOrExpense, false);
+            }
+        });
+
+
     }
 }
 

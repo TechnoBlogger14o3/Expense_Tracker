@@ -30,9 +30,11 @@
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
             android:background="@drawable/edt_background"
-            android:drawableTop="@drawable/ic_icon_home"
+            android:drawableTop="@drawable/ic_salary"
             android:gravity="center"
             android:hint="@string/salary"
+            android:layout_gravity="center_vertical"
+
             android:padding="@dimen/_10sdp"
             android:text="" />
 
@@ -43,8 +45,9 @@
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
             android:background="@drawable/edt_background"
-            android:drawableTop="@drawable/ic_icon_home"
+            android:drawableTop="@drawable/ic_surprise"
             android:gravity="center"
+            android:layout_gravity="center_vertical"
             android:hint="@string/gift"
             android:padding="@dimen/_10sdp"
             android:text="" />
@@ -56,7 +59,7 @@
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
             android:background="@drawable/edt_background"
-            android:drawableTop="@drawable/ic_icon_home"
+            android:drawableTop="@drawable/ic_vector"
             android:gravity="center"
             android:hint="@string/lottery"
             android:padding="@dimen/_10sdp"
@@ -80,7 +83,7 @@
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
             android:background="@drawable/edt_background"
-            android:drawableTop="@drawable/ic_icon_home"
+            android:drawableTop="@drawable/ic_discount"
             android:gravity="center"
             android:hint="@string/sale"
             android:padding="@dimen/_10sdp"
@@ -93,8 +96,8 @@
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
             android:background="@drawable/edt_background"
-            android:drawableTop="@drawable/ic_icon_home"
             android:gravity="center"
+            android:layout_gravity="center_vertical"
             android:hint="@string/refund"
             android:padding="@dimen/_10sdp"
             android:text="" />
@@ -106,8 +109,8 @@
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
             android:background="@drawable/edt_background"
-            android:drawableTop="@drawable/ic_icon_home"
             android:gravity="center"
+            android:layout_gravity="center_vertical"
             android:hint="@string/other"
             android:padding="@dimen/_10sdp"
             android:text="" />

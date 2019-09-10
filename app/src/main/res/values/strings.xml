@@ -34,6 +34,8 @@
     <string name="enter_your_details">Enter Your Details</string>
     <string name="what_is_your_name">What is your name</string>
     <string name="enter_name">Enter name</string>
+    <string name="hint_amount">\u20B9 0.00</string>
+    <string name="hint_enter_amount">\u20B9 Enter Amount</string>
     <string name="what_is_your_gender">What is your gender</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
@@ -54,4 +56,9 @@
     <string name="your_mobile_number_is_successfully_registered">Your mobile number is successfully registered</string>
     <string name="setup_my_budget">Setup my Budget</string>
     <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="set_my_expense">Set My Expense</string>
+    <string name="set_my_income">Set My Income</string>
+    <string name="add_income">Add Income</string>
+    <string name="add_expense">Add Expense</string>
 </resources>

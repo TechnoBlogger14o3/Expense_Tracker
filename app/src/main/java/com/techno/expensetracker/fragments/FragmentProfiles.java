@@ -25,7 +25,7 @@ public class FragmentProfiles extends CoreFragment {
     private Button btnSave;
     RadioButton rbMale, rbFemale, rb1824, rb2534, rb3544, rb45;
     RadioGroup radioGender, radioAgeGroup, radio1834, radio35;
-    ImageView imgProfile;
+    ImageView imgProfile,imgLogOut;
     String strDummyImageURL = "https://blog.zenstudios.com/wp-content/uploads/2012/09/Zen_Pinball_THD_The_Avengers_key_art_300dpi_02.jpg";
 
     @Override
@@ -43,6 +43,7 @@ public class FragmentProfiles extends CoreFragment {
         txtTitle = view.findViewById(R.id.txtTitle);
         btnSave = view.findViewById(R.id.btnSave);
         imgProfile = view.findViewById(R.id.imgProfile);
+        imgLogOut = view.findViewById(R.id.imgLogOut);
 
         radioGender = view.findViewById(R.id.radioGender);
 
@@ -132,6 +133,13 @@ public class FragmentProfiles extends CoreFragment {
             @Override
             public void onClick(View view) {
                 mActivity.onBackPressed();
+            }
+        });
+
+        imgLogOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
             }
         });
 

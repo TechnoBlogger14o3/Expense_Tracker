@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".Activities.MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:textSize="@dimen/_16sdp"
+        android:drawableLeft="@drawable/ic_back"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_5sdp"
+        android:drawablePadding="@dimen/_14sdp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite">
+
+    </TextView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:background="@color/colorPrimary">
+
+        <EditText
+            android:id="@+id/edtAddIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@null"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_14sdp"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/colorWhite"
+            android:text="@string/add_income" />
+
+        <EditText
+            android:id="@+id/edtEnterAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/edtAddIncome"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textSize="@dimen/_18sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@null"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/greyDark500"
+            android:text="@string/hint_enter_amount" />
+
+
+
+
+    </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edt_background"
+                android:layout_marginRight="@dimen/_20sdp">
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="8dp" />
+            </RelativeLayout>
+
+
+
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Date"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/edt_background"
+        android:hint="Today"
+        android:drawableRight="@drawable/ic_calendar"
+        android:padding="@dimen/_10sdp"
+        android:text="" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Note"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/edtNote"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/edt_background"
+        android:padding="@dimen/_10sdp"
+        android:text="" />
+
+
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:background="@drawable/background_tri_color"
+        android:text="@string/add_income"
+        android:textSize="@dimen/_14sdp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

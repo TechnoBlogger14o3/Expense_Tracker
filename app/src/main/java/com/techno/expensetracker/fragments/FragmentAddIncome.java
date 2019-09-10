@@ -14,7 +14,7 @@ import com.techno.expensetracker.R;
 public class FragmentAddIncome extends CoreFragment {
 
     private View view;
-    private TextView txtSkip;
+    private TextView txtSalary;
     private Button btnVerifyAndProceed;
 
     @Override
@@ -27,7 +27,14 @@ public class FragmentAddIncome extends CoreFragment {
     }
 
     private void initView() {
-
+        txtSalary = view.findViewById(R.id.txtSalary);
+        txtSalary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentAddIncomeDetail fragmentAddIncomeDetail = new FragmentAddIncomeDetail();
+                mActivity.callFragment(fragmentAddIncomeDetail, false);
+            }
+        });
     }
 }
 
