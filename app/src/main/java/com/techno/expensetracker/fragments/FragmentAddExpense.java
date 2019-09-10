@@ -11,15 +11,16 @@ import android.widget.TextView;
 import com.techno.expensetracker.R;
 
 
-public class FragmentAddIncome extends CoreFragment {
+public class FragmentAddExpense extends CoreFragment {
 
     private View view;
     private TextView txtSkip;
     private Button btnVerifyAndProceed;
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_add_income, container, false);
+        view = inflater.inflate(R.layout.fragment_add_expense, container, false);
         hideToolBar();
         showBottomBar();
         initView();

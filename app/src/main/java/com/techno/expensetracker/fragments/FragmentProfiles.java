@@ -123,8 +123,8 @@ public class FragmentProfiles extends CoreFragment {
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentAddIncome fragmentAddIncome = new FragmentAddIncome();
-                mActivity.callFragment(fragmentAddIncome, false);
+                FragmentCategories fragmentCategories = new FragmentCategories();
+                mActivity.callFragment(fragmentCategories, false);
             }
         });
 

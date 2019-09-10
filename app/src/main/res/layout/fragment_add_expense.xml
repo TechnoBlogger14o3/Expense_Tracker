@@ -30,9 +30,9 @@
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
             android:background="@drawable/edt_background"
-            android:drawableTop="@drawable/ic_icon_home"
+            android:drawableTop="@drawable/ic_dish"
             android:gravity="center"
-            android:hint="@string/salary"
+            android:hint="@string/food"
             android:padding="@dimen/_10sdp"
             android:text="" />
 
@@ -43,9 +43,9 @@
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
             android:background="@drawable/edt_background"
-            android:drawableTop="@drawable/ic_icon_home"
+            android:drawableTop="@drawable/ic_bus"
             android:gravity="center"
-            android:hint="@string/gift"
+            android:hint="@string/travel"
             android:padding="@dimen/_10sdp"
             android:text="" />
 
@@ -56,9 +56,9 @@
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
             android:background="@drawable/edt_background"
-            android:drawableTop="@drawable/ic_icon_home"
+            android:drawableTop="@drawable/ic_house"
             android:gravity="center"
-            android:hint="@string/lottery"
+            android:hint="@string/rent"
             android:padding="@dimen/_10sdp"
             android:text="" />
 
@@ -80,9 +80,9 @@
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
             android:background="@drawable/edt_background"
-            android:drawableTop="@drawable/ic_icon_home"
+            android:drawableTop="@drawable/ic_mortarboard"
             android:gravity="center"
-            android:hint="@string/sale"
+            android:hint="@string/education"
             android:padding="@dimen/_10sdp"
             android:text="" />
 
@@ -93,9 +93,9 @@
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
             android:background="@drawable/edt_background"
-            android:drawableTop="@drawable/ic_icon_home"
+            android:drawableTop="@drawable/ic_loan"
             android:gravity="center"
-            android:hint="@string/refund"
+            android:hint="@string/loan"
             android:padding="@dimen/_10sdp"
             android:text="" />
 
@@ -106,10 +106,9 @@
             android:layout_margin="@dimen/_2sdp"
             android:layout_weight="1"
             android:background="@drawable/edt_background"
-            android:drawableTop="@drawable/ic_icon_home"
             android:gravity="center"
+            android:layout_gravity="center_vertical"
             android:hint="@string/other"
-            android:padding="@dimen/_10sdp"
             android:text="" />
 
     </LinearLayout>
