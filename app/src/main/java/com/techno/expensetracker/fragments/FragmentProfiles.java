@@ -31,6 +31,7 @@ public class FragmentProfiles extends CoreFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_profiles, container, false);
+        hideToolBar();
         showBottomBar();
         initView();
         return view;
@@ -122,8 +123,8 @@ public class FragmentProfiles extends CoreFragment {
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentSuccess fragmentSuccess = new FragmentSuccess();
-                mActivity.callFragment(fragmentSuccess, true);
+                FragmentAddIncome fragmentAddIncome = new FragmentAddIncome();
+                mActivity.callFragment(fragmentAddIncome, false);
             }
         });
 
