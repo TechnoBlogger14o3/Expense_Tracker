@@ -34,7 +34,7 @@ public class FragmentSuccess extends CoreFragment {
             @Override
             public void onClick(View view) {
                 FragmentBudgets fragmentBudgets = new FragmentBudgets();
-                mActivity.callFragment(fragmentBudgets, true);
+                mActivity.callFragment(fragmentBudgets, false);
             }
         });
     }

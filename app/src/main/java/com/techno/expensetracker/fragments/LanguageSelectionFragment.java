@@ -93,6 +93,6 @@ public class LanguageSelectionFragment extends CoreFragment implements LangSelec
         }
         adapter.notifyDataSetChanged();
         FragmentRegisterMobile fragmentRegisterMobile = new FragmentRegisterMobile();
-        mActivity.callFragment(fragmentRegisterMobile, true);
+        mActivity.callFragment(fragmentRegisterMobile, false);
     }
 }

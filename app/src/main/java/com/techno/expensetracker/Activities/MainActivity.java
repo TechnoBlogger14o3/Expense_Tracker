@@ -16,6 +16,6 @@ public class MainActivity extends BaseActivity {
         setDisplayHomeAsUpEnabled(false);
         setHomeButtonEnabled(false);
         LanguageSelectionFragment fragmentRegisterMobile = new LanguageSelectionFragment();
-        callFragment(fragmentRegisterMobile, true);
+        callFragment(fragmentRegisterMobile, false);
     }
 }

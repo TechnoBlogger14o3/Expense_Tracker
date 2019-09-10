@@ -147,7 +147,7 @@ public class FragmentDetails extends CoreFragment {
             @Override
             public void onClick(View view) {
                 FragmentSuccess fragmentSuccess = new FragmentSuccess();
-                mActivity.callFragment(fragmentSuccess, true);
+                mActivity.callFragment(fragmentSuccess, false);
             }
         });
 

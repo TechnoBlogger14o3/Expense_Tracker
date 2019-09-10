@@ -36,7 +36,7 @@ public class FragmentRegisterMobile extends CoreFragment {
             @Override
             public void onClick(View view) {
                 FragmentOTP fragmentOTP = new FragmentOTP();
-                mActivity.callFragment(fragmentOTP, true);
+                mActivity.callFragment(fragmentOTP, false);
             }
         });
 

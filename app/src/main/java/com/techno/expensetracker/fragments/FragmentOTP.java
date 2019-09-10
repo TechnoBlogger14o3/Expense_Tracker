@@ -47,7 +47,7 @@ public class FragmentOTP extends CoreFragment {
             @Override
             public void onClick(View view) {
                 FragmentDetails fragmentDetails = new FragmentDetails();
-                mActivity.callFragment(fragmentDetails, true);
+                mActivity.callFragment(fragmentDetails, false);
             }
         });
     }
